@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>kahoot!</title>
+</head>
+<body>
+    <div class="container-fluid d-flex justify-content-center bg-dark text-white mb-3" >
+        <div class="d-flex" id="style" >
+            <div >
+                <h1>KAHOOT!</h1>
+            </div>
+            <div id="contador" class="fs-3 text-success m-1" ></div>
+        </div> 
+    </div>
+
+    <div class="botongg">
+        <div class="d-flex justify-content-center mb-3 ">
+            <button type="button" id="comensar" class="bg-secondary  text-white d-flex justify-content-center mb-3 botongg">
+                Comensar
+            </button>
+        </div>
+    </div>
+
+    <div id="PantallaRespuesta">   
+        <div class="container-fluid d-flex justify-content-center">
+            <h2 id="preguntas" ></h2>
+        </div>
+
+        <div class="container-fluid d-flex justify-content-center ">
+            <div class="bg-light border border-dark rounded-pill border-4" style="margin: 5px;padding-left: 5px; ">
+                <div class="opcion">a.</div>
+                <button type="button" class=" respuesta1 styled" id="btn" onclick="comprobarRespuesta(0)"></button>
+            </div>
+        </div>
+
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="bg-light border border-dark rounded-pill border-4" style="margin: 5px;padding-left: 5px;">
+                <div class="opcion">b.</div>
+                <button type="button" class=" respuesta2 styled" id="btn"  onclick="comprobarRespuesta(1)"></button>
+            </div>
+        </div>
+
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="bg-light border border-dark rounded-pill border-4" style="margin: 5px;padding-left: 5px;">
+                <div class="opcion">c.</div>
+                <button type="button" class=" respuesta3 styled" id="btn" onclick="comprobarRespuesta(2)"></button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mostrarFinal">
+        <div class="Final d-flex justify-content-center container-fluid">
+            <div >
+                <h6 class=" border border-4 border-dark rounded p-1">Respuestas Correctas <span class=" border border-5 border-info rounded p-1  border-top-0 border-bottom-0" id="Correctas">1</span></h6>
+            </div>
+        </div>
+        <div class="Final d-flex justify-content-center container-fluid">
+            <div>
+                <h6 class=" border border-4 border-dark rounded p-1">Respuestas Incorrectas <span class=" border border-5 border-info rounded border-top-0 border-bottom-0   p-1" id="Incorrectas">1</span></h6>
+            </div>
+        </div>
+        <div class="Final d-flex justify-content-center container-fluid">
+            <div>
+                <a href="" class="text-decoration-none text-dark border border-dark rounded border-4 p-1">Intentar De Nuevo</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

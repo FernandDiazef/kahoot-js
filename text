@@ -1,0 +1,91 @@
+
+<!-- <div class="container-fluid d-flex justify-content-center bg-dark text-white mb-3" >
+    <div class="d-f" style="gap: 2em">
+        <div >
+            <h1>KAHOOT!</h1>
+        </div>
+        <div id="contador" class="fs-3 text-success m-1" ></div>
+    </div> 
+</div>
+    
+    <div class="d-flex justify-content-center bg-light mb-3">
+        <div id="preguntas" class=" fs-1 text ">a</div>
+    </div>
+    <div class="d-flex justify-content-center mb-3">
+        <div id="respuestas" class="d-flex justify-content-center" style="gap: 10px"></div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <button id="comensar" class="bg-secondary text-white">Comensar</button>
+    </div> -->
+
+
+
+
+let guardarDatos = "";
+    let boton = `
+    <button id="btn" class="btn btn-secondary" value="${arreglos[numero].respuesta1}">${arreglos[numero].respuesta1}</button>
+    <button id="btn" class="btn btn-success" value="${arreglos[numero].respuesta4}">${arreglos[numero].respuesta4}</button>
+    <button id="btn" class="btn btn-danger" value="${arreglos[numero].respuesta3}">${arreglos[numero].respuesta3}</button>
+    <button id="btn" class="btn btn-warning" value="${arreglos[numero].respuesta2}">${arreglos[numero].respuesta2}</button>`;
+    guardarDatos += boton;
+
+
+
+
+
+
+
+
+/*
+respuesta1Muestra.addEventListener("click", () => {
+    if(result[0] === respuesta1Muestra.innerHTML || result[4] === respuesta1Muestra.innerHTML){
+        respuesta1Muestra.classList.remove("bg-white") 
+        respuesta1Muestra.classList.add("greenCorrecto");
+        numeroCorrecto++;
+
+    }else{
+        respuesta1Muestra.classList.remove("bg-white") 
+        respuesta1Muestra.classList.add("redIncorrecto");
+                    numeroIncorrecto++;
+    }
+    if(numero < 4){
+        numero++;
+        setTimeout(botones, 1000);
+    }else {
+            setTimeout(aumentoDeNumeros, 1000);
+    }
+})
+respuesta2Muestra.addEventListener("click", () => {
+    if(result[2] === respuesta2Muestra.innerHTML){
+        respuesta2Muestra.classList.remove("bg-white");
+        respuesta2Muestra.classList.add("greenCorrecto");
+        numeroCorrecto++;
+    }else{
+        respuesta2Muestra.classList.remove("bg-white");
+        respuesta2Muestra.classList.add("redIncorrecto");
+        numeroIncorrecto++;
+    }
+    if(numero < 4){
+        numero++;
+        setTimeout(botones, 1000);
+    }else {
+        setTimeout(aumentoDeNumeros, 1000);
+    }
+})
+respuesta3Muestra.addEventListener("click", () => {
+    if(result[3] === respuesta3Muestra.innerHTML || result[1] === respuesta3Muestra.innerHTML){
+       respuesta3Muestra.classList.remove("bg-white");
+       respuesta3Muestra.classList.add("greenCorrecto");
+        numeroCorrecto++;
+    }else{
+        respuesta3Muestra.classList.remove("bg-white");
+        respuesta3Muestra.classList.add("redIncorrecto");
+        numeroIncorrecto++
+    }
+    if(numero < 4){
+        numero++;
+        setTimeout(botones, 1000);
+    }else {
+        setTimeout(aumentoDeNumeros, 1000);
+    }
+}) */
